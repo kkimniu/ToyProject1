@@ -1,0 +1,10 @@
+ CREATE TABLE member (
+     idx INT PRIMARY KEY AUTO_INCREMENT, 
+     id VARCHAR(50) UNIQUE NOT NULL,
+     pwd VARCHAR(50) NOT NULL,
+     name VARCHAR(50),
+     email VARCHAR(200),
+     tel VARCHAR(50),
+     addr VARCHAR(50),
+     joindate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ );
