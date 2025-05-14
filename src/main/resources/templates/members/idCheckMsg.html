@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>아이디 중복 검사</title>
+</head>
+<body>
+<script th:inline="javascript">
+    window.alert(/*[[ ${msg} ]]*/ '');  // Thymeleaf 변수 적용
+    window.opener.document.getElementById("userid").value = /*[[ ${userid} ]]*/ ''; // 부모 창의 입력 필드 설정
+    window.close(); // 현재 창 닫기
+</script>
+</body>
+</html>
